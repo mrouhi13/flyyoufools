@@ -1,0 +1,6 @@
+export { Steps } from './Steps/Steps'
+export { LicenseDetails } from './LicenseDetails/LicenseDetails'
+export {PropertiesList} from './PropertiesList/PropertiesList'
+export {AttributesList} from './AttributesList/AttributesList'
+export {StepsProgress} from './StepsProgress/StepsProgress'
+export {DonatePopover} from './DonatePopover/DonatePopover'
