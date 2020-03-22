@@ -13,7 +13,7 @@ export const Header = () => (
                  alt='Fly You Fools'
             />
             <Typography.Title level={1} style={{fontSize:18, display:'inline-flex'}}>
-                Fly You Fools
+                FlyYouFools
             </Typography.Title>
         </div>
     </Layout.Header>

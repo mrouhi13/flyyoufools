@@ -5,6 +5,7 @@ import {
     InfoCircleOutlined
 } from '@ant-design/icons'
 import { Button, Col, Result, Row, Typography } from 'antd'
+import Animate from 'rc-animate'
 import React from 'react'
 import { AttributesList, PropertiesList } from '..'
 import { useStep } from '../../../hooks'
@@ -20,57 +21,64 @@ export const LicenseDetails = () => {
             title={licenseInfo.name}
             status='info'
             icon={
-                licenseInfo.logo ? <img
-                        src={process.env.PUBLIC_URL + `/static/media/logos/${licenseInfo.logo}`}
-                        title={licenseInfo.name}
-                        alt={licenseInfo.name}
-                        width='80px'
-                        height='100%'
-                    /> :
-                    <ExclamationOutlined style={{color: '#faad14'}}/>
+                <Animate transitionName='fade' transitionAppear>
+                    {licenseInfo.logo ? <img key='1'
+                                             src={process.env.PUBLIC_URL + `/static/media/logos/${licenseInfo.logo}`}
+                                             title={licenseInfo.name}
+                                             alt={licenseInfo.name}
+                                             width='80px'
+                                             height='100%'
+                        /> :
+                        <ExclamationOutlined key='2'
+                                             style={{
+                                                 fontSize: 52,
+                                                 color: '#faad14'
+                                             }}/>}
+                </Animate>
             }
             subTitle={
-                <Row>
-                    <Col xs={{span: 24}}
-                         md={{span: 16, offset: 4}}
-                         lg={{span: 18, offset: 3}}
-                         xl={{span: 18, offset: 3}}
-                    >
-                        <Typography.Text>{licenseInfo.description}
-                            {
-                                licenseInfo.read_more_link ? <Button
-                                    type='link'
-                                    size='small'
-                                    href={licenseInfo.read_more_link}
-                                    target='_blank'>
-                                    Read more...
-                                </Button> : null
-                            }
-                        </Typography.Text>
-                    </Col>
-                </Row>
+                <Animate transitionName='fade' transitionAppear>
+                    <Row key='3'>
+                        <Col xs={{span: 24}}
+                             md={{span: 16, offset: 4}}
+                             lg={{span: 18, offset: 3}}
+                             xl={{span: 18, offset: 3}}
+                        >
+                            <Typography.Text>{licenseInfo.description}
+                                {
+                                    licenseInfo.read_more_link ? <Button
+                                        type='link'
+                                        size='small'
+                                        href={licenseInfo.read_more_link}
+                                        target='_blank'>
+                                        Read more...
+                                    </Button> : null
+                                }
+                            </Typography.Text>
+                        </Col>
+                    </Row>
+                </Animate>
             }
             extra={[
-                <Button onClick={() => backToLastStep()}
-                        type='primary'
-                        key='back'
-                >
+                <Button key='4' onClick={() => backToLastStep()}
+                        type='primary'>
                     Go Back
                 </Button>,
-                <Button onClick={() => resetState()}
-                        key='reset'
-                >
+                <Button key='5' onClick={() => resetState()}>
                     Reset
                 </Button>
             ]}
         >
             <Row>
+
                 <Col xs={{span: 24}}
                      md={{span: 12}}
                      lg={{span: 6}}
                      xl={{span: 6}}
                 >
-                    <PropertiesList header='Permissions'
+                    <PropertiesList key='a'
+                                    animationType={['left']}
+                                    header='Permissions'
                                     items={licenseInfo.permissions}
                                     icon={<CheckCircleOutlined
                                         className='item-icon'
@@ -83,7 +91,9 @@ export const LicenseDetails = () => {
                      lg={{span: 6}}
                      xl={{span: 6}}
                 >
-                    <PropertiesList header='Limitations'
+                    <PropertiesList key='b'
+                                    header='Limitations'
+                                    animationType={['left']}
                                     items={licenseInfo.limitations}
                                     icon={<CloseCircleOutlined
                                         className='item-icon'
@@ -96,7 +106,9 @@ export const LicenseDetails = () => {
                      lg={{span: 6}}
                      xl={{span: 6}}
                 >
-                    <PropertiesList header='Conditions'
+                    <PropertiesList key='c'
+                                    header='Conditions'
+                                    animationType={['right']}
                                     items={licenseInfo.conditions}
                                     icon={<InfoCircleOutlined
                                         className='item-icon'
@@ -110,6 +122,7 @@ export const LicenseDetails = () => {
                      xl={{span: 6}}
                 >
                     <AttributesList header='Properties'
+                                    animationType={['right']}
                                     items={licenseInfo.attributes}
                     />
                 </Col>
