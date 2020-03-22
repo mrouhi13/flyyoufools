@@ -1,0 +1,138 @@
+[
+    {
+        "number": 1,
+        "name": "Public Domain",
+        "questionBody": "Is it really important after now?",
+        "onYesAction": {
+            "end": false,
+            "pervStep": 0,
+            "nextStep": 2,
+            "appropriateLicense": null
+        },
+        "onNoAction": {
+            "end": true,
+            "pervStep": 0,
+            "nextStep": 0,
+            "appropriateLicense": "unlicense"
+        }
+    },
+    {
+        "number": 2,
+        "name": "Creative Commons",
+        "questionBody": "Is it a software / package / library code?",
+        "onYesAction": {
+            "end": false,
+            "pervStep": 1,
+            "nextStep": 3,
+            "appropriateLicense": null
+        },
+        "onNoAction": {
+            "end": true,
+            "pervStep": 1,
+            "nextStep": 0,
+            "appropriateLicense": "cc-by-4.0"
+        }
+    },
+    {
+        "number": 3,
+        "name": "Present License",
+        "questionBody": "Is it part of an existing project?",
+        "onYesAction": {
+            "end": true,
+            "pervStep": 2,
+            "nextStep": 0,
+            "appropriateLicense": "present"
+        },
+        "onNoAction": {
+            "end": false,
+            "pervStep": 2,
+            "nextStep": 4,
+            "appropriateLicense": null
+        }
+    },
+    {
+        "number": 4,
+        "name": "Proprietary Usage",
+        "questionBody": "Allow proprietary usage?",
+        "onYesAction": {
+            "end": false,
+            "pervStep": 3,
+            "nextStep": 6,
+            "appropriateLicense": null
+        },
+        "onNoAction": {
+            "end": false,
+            "pervStep": 3,
+            "nextStep": 5,
+            "appropriateLicense": null
+        }
+    },
+    {
+        "number": 5,
+        "name": "Server Side Software",
+        "questionBody": "Is it run over a network (Server side software)?",
+        "onYesAction": {
+            "end": true,
+            "nextStep": 4,
+            "pervStep": 0,
+            "appropriateLicense": "agpl-3.0"
+        },
+        "onNoAction": {
+            "end": true,
+            "pervStep": 4,
+            "nextStep": 0,
+            "appropriateLicense": "gpl-3.0"
+        }
+    },
+    {
+        "number": 6,
+        "name": "Access To Change",
+        "questionBody": "Do you want access to change made?",
+        "onYesAction": {
+            "end": true,
+            "pervStep": 4,
+            "nextStep": 0,
+            "appropriateLicense": "lgpl-3.0"
+        },
+        "onNoAction": {
+            "end": false,
+            "pervStep": 4,
+            "nextStep": 7,
+            "appropriateLicense": null
+        }
+    },
+    {
+        "number": 7,
+        "name": "Rights To Patent",
+        "questionBody": "Keep the rights to patents in your code?",
+        "onYesAction": {
+            "end": false,
+            "pervStep": 6,
+            "nextStep": 8,
+            "appropriateLicense": null
+        },
+        "onNoAction": {
+            "end": true,
+            "pervStep": 6,
+            "nextStep": 0,
+            "appropriateLicense": "apache-2.0"
+        }
+    },
+    {
+        "number": 8,
+        "name": "Restrict In Promotion",
+        "questionBody": "Restrict use of your name in promotion?",
+        "onYesAction": {
+            "end": true,
+            "pervStep": 7,
+            "nextStep": 0,
+            "appropriateLicense": "bsd-3-clause"
+        },
+        "onNoAction": {
+            "end": true,
+            "pervStep": 7,
+            "nextStep": 0,
+            "appropriateLicense": "mit"
+        }
+    }
+]
