@@ -45,7 +45,7 @@ export const useStep = () => {
         setTimeout(() => dispatch({
                 type: stepActions.IS_LOADING,
                 payload: false
-            }), 200
+            }), 300
         )
     }
 
@@ -58,7 +58,7 @@ export const useStep = () => {
         setTimeout(() => dispatch({
                 type: stepActions.IS_LOADING,
                 payload: false
-            }), 200
+            }), 300
         )
     }
 
@@ -71,7 +71,7 @@ export const useStep = () => {
         setTimeout(() => dispatch({
                 type: stepActions.IS_LOADING,
                 payload: false
-            }), 200
+            }), 300
         )
     }
 
