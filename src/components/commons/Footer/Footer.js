@@ -38,7 +38,7 @@ export const Footer = () => (
                 >
                     <img width='28'
                          height='100%'
-                         src={process.env.PUBLIC_URL + `/static/media/github-mark-dark.svg`}
+                         src={process.env.PUBLIC_URL + `/static/media/gh-mark-dark.svg`}
                          title='Girhub Repository'
                          alt='Github Repository'/>
                 </Button>
