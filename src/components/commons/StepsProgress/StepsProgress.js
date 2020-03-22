@@ -4,9 +4,6 @@ import { STEPS } from '../../../constants'
 import { useStep } from '../../../hooks'
 import './StepsProgress.scss'
 
-const {Step} = Steps
-
-
 export const StepsProgress = () => {
     const {steps} = useStep()
 
@@ -19,7 +16,7 @@ export const StepsProgress = () => {
             className='steps-progress'
         >
             {STEPS.map(item => (
-                <Step key={item.name} title={item.name}/>
+                <Steps.Step key={item.name} title={item.name}/>
             ))}
         </Steps>
     )

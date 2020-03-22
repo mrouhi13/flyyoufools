@@ -1,11 +1,9 @@
 import { List, Tooltip, Typography } from 'antd'
 import React from 'react'
 
-const {Title, Text} = Typography
-
 export const PropertiesList = ({header, items, icon}) => (
     <List
-        header={<Title level={4}>{header}</Title>}
+        header={<Typography.Title level={4}>{header}</Typography.Title>}
         itemLayout='horizontal'
         locale={{emptyText: ' '}}
         split={false}
@@ -14,7 +12,7 @@ export const PropertiesList = ({header, items, icon}) => (
             <List.Item>
                 {icon}
                 <Tooltip title={item.tip}>
-                    <Text>{item.name}</Text>
+                    <Typography.Text>{item.name}</Typography.Text>
                 </Tooltip>
             </List.Item>
         )}

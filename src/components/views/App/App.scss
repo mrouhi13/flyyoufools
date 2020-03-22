@@ -4,38 +4,6 @@
   height: 100vh;
 }
 
-.layout-header {
-  flex-shrink: 0;
-  background-color: #f1f2f5;
-
-  .app-logo {
-    img {
-      height: 35px;
-      margin: 15px 24px 14px 0;
-      float: left;
-    }
-  }
-}
-
 .layout-content {
   flex: 1 0 auto;
-}
-
-.layout-footer, .layout-footer button, .layout-footer a {
-  flex-shrink: 0;
-  font-size: 12px;
-
-  button, a {
-    color: #828385;
-  }
-
-  .message {
-    padding-left: 7px;
-  }
-
-  .divider {
-    padding: 0;
-    margin: 0;
-    background-color: rgba(0, 0, 0, 0.05);
-  }
 }

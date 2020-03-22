@@ -1,0 +1,18 @@
+.layout-footer, .layout-footer button, .layout-footer a {
+  flex-shrink: 0;
+  font-size: 12px;
+
+  .copyright {
+    padding-right: 7px;
+  }
+
+  .divider {
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .github-logo {
+    float: right;
+  }
+}

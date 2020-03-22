@@ -4,8 +4,6 @@ import { StepsProgress } from '..'
 import { useStep } from '../../../hooks'
 import './Steps.scss'
 
-const {Text} = Typography
-
 export const Steps = () => {
     const {steps, changeStep} = useStep()
 
@@ -17,26 +15,32 @@ export const Steps = () => {
                 </Col>
             </Row>
             <Row>
-                <Col span={12} offset={6}>
+                <Col span={24}>
                     <div className='align-center question-body'>
-                        <Text style={{fontSize: 28}}>
+                        <Typography.Text>
                             {steps.currentStep.questionBody}
-                        </Text>
+                        </Typography.Text>
                     </div>
                 </Col>
             </Row>
             <Row>
-                <Col span={12} offset={6}>
+                <Col span={24}>
                     <div className='align-center'>
                         <Button type='primary'
                                 className='answer-button'
                                 onClick={() => {
                                     changeStep(true)
-                                }}>Yes</Button>
+                                }}
+                        >
+                            Yes
+                        </Button>
                         <Button className='answer-button'
                                 onClick={() => {
                                     changeStep(false)
-                                }}>No</Button>
+                                }}
+                        >
+                            No
+                        </Button>
                     </div>
                 </Col>
             </Row>

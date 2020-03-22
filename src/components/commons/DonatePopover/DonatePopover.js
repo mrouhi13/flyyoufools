@@ -15,7 +15,8 @@ export const DonatePopover = () => (
                 <Typography.Text strong>Bitcoin</Typography.Text>
                 <img
                     src={process.env.PUBLIC_URL + `/static/media/btc-qr.svg`}
-                    width='90' height='90'
+                    width='90'
+                    height='90'
                     title='Bitcoin Wallet' alt='Bitcoin Wallet'/>
                 <Typography.Text
                     copyable={{text: BTC_WALLET_ADDRESS}}
@@ -30,7 +31,8 @@ export const DonatePopover = () => (
                 <Typography.Text strong>Ethereum</Typography.Text>
                 <img
                     src={process.env.PUBLIC_URL + `/static/media/eth-qr.svg`}
-                    width='90' height='90'
+                    width='90'
+                    height='90'
                     title='Ethereum Wallet' alt="Ethereum Wallet"/>
                 <Typography.Text
                     copyable={{text: ETH_WALLET_ADDRESS}}

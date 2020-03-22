@@ -1,0 +1,10 @@
+.layout-header {
+  flex-shrink: 0;
+  background-color: #f1f2f5;
+
+  .app-logo {
+    img {
+      margin-right: 10px;
+    }
+  }
+}
