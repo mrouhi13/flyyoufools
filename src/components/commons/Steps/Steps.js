@@ -6,21 +6,17 @@ import { useStep } from '../../../hooks'
 import './Steps.scss'
 
 export const Steps = () => {
-    const myRef = useRef(null)
-    const {steps, changeStep} = useStep()
+    const stepsProgressRef = useRef(null)
+    const {steps, changeStep, scrollToRef} = useStep()
     const useMountEffect = fun => useEffect(fun, [])
 
-    const scrollToRef = (ref) => {
-        ref.current.firstChild.scrollLeft = steps.currentStep.number * 144
-    }
-
-    useMountEffect(() => scrollToRef(myRef))
+    useMountEffect(() => scrollToRef(stepsProgressRef, steps.currentStep))
 
     return (
         <Fragment>
             <Row key='1' justify='center'>
                 <Col span={20}>
-                    <div ref={myRef}>
+                    <div ref={stepsProgressRef}>
                         <StepsProgress/>
                     </div>
                 </Col>
@@ -46,16 +42,14 @@ export const Steps = () => {
                                 <Button type='primary'
                                         className='answer-button'
                                         onClick={() => {
-                                            scrollToRef(myRef)
-                                            changeStep(true)
+                                            changeStep(true, stepsProgressRef)
                                         }}
                                 >
                                     Yes
                                 </Button>
                                 <Button className='answer-button'
                                         onClick={() => {
-                                            scrollToRef(myRef)
-                                            changeStep(false)
+                                            changeStep(false, stepsProgressRef)
                                         }}
                                 >
                                     No

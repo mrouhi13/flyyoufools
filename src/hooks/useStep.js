@@ -6,7 +6,7 @@ import { stepActions } from '../reducers'
 export const useStep = () => {
     const {steps, dispatch} = useContext(StepContext)
 
-    const changeStep = (currentStepAnswer) => {
+    const changeStep = (currentStepAnswer, ref) => {
         dispatch({
             type: stepActions.IS_LOADING,
             payload: true
@@ -14,12 +14,11 @@ export const useStep = () => {
 
         let nextAction = {}
         let nextStep = {}
-        const currentStep = steps.currentStep
 
         if (currentStepAnswer) {
-            nextAction = currentStep.onYesAction
+            nextAction = steps.currentStep.onYesAction
         } else {
-            nextAction = currentStep.onNoAction
+            nextAction = steps.currentStep.onNoAction
         }
 
         if (nextAction.end === true) {
@@ -28,13 +27,7 @@ export const useStep = () => {
                 payload: LICENSES.filter(license => license.slug === nextAction.appropriateLicense)[0]
             })
         } else {
-            if (nextAction.nextStep === currentStep.number) {
-                nextStep = currentStep.subSteps.filter(
-                    substep => substep.number === nextAction.subStep)[0]
-            } else {
-                nextStep = STEPS.filter(
-                    step => step.number === nextAction.nextStep)[0]
-            }
+            nextStep = STEPS.filter(step => step.number === nextAction.nextStep)[0]
 
             dispatch({
                 type: stepActions.UPDATE_CURRENT_STEP,
@@ -42,11 +35,17 @@ export const useStep = () => {
             })
         }
 
+        scrollToRef(ref, nextStep)
+
         setTimeout(() => dispatch({
                 type: stepActions.IS_LOADING,
                 payload: false
             }), 300
         )
+    }
+
+    const scrollToRef = (ref, currentStep) => {
+        ref.current.firstChild.scrollLeft = (currentStep.number - 1) * 144
     }
 
     const resetState = () => {
@@ -75,5 +74,5 @@ export const useStep = () => {
         )
     }
 
-    return {steps, changeStep, resetState, backToLastStep}
+    return {steps, changeStep, scrollToRef, resetState, backToLastStep}
 }
