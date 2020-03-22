@@ -1,0 +1,483 @@
+[
+  {
+    "slug": "unlicense",
+    "name": "The Unlicense (Public Domain)",
+    "description": "A license with no conditions whatsoever which dedicates works to the public domain. Unlicensed works, modifications, and larger works may be distributed under different terms and without source code.",
+    "read_more_link": "http://unlicense.org",
+    "logo": "pd-logo.svg",
+    "permissions": [
+      {
+        "name": "Private use",
+        "tip": "This software may be used and modified in private."
+      },
+      {
+        "name": "Commercial use",
+        "tip": "This software and derivatives may be used for commercial purposes."
+      },
+      {
+        "name": "Modification",
+        "tip": "This software may be modified."
+      },
+      {
+        "name": "Distribution",
+        "tip": "This software may be distributed."
+      }
+    ],
+    "limitations": [
+      {
+        "name": "Liability",
+        "tip": "This license includes a limitation of liability."
+      },
+      {
+        "name": "Warranty",
+        "tip": "The license explicitly states that it does NOT provide any warranty."
+      }
+    ],
+    "conditions": [],
+    "attributes": [
+      {
+        "name": "Copyleft",
+        "_value": false
+      },
+      {
+        "name": "FSF Approved",
+        "_value": true
+      },
+      {
+        "name": "GPL Approved",
+        "_value": true
+      }
+    ]
+  },
+  {
+    "slug": "cc-by-4.0",
+    "name": "Creative Commons",
+    "description": "Creative Commons is a global nonprofit organization that enables sharing and reuse of creativity and knowledge through the provision of free legal tools. CC licenses are copyright licenses and depend on the existence of copyright to work. CC licenses are legal tools that creators and other rights holders can use to offer certain usage rights to the public while reserving other rights.",
+    "read_more_link": "https://creativecommons.org/licenses/by/4.0/",
+    "logo": "cc-by-logo.svg",
+    "permissions": [],
+    "limitations": [],
+    "conditions": [],
+    "attributes": [
+      {
+        "name": "Copyleft",
+        "_value": false
+      },
+      {
+        "name": "FSF Approved",
+        "_value": false
+      },
+      {
+        "name": "GPL Approved",
+        "_value": false
+      }
+    ]
+  },
+  {
+    "slug": "present",
+    "name": "Present License",
+    "description": "Just use present license.",
+    "read_more_link": "",
+    "logo": "",
+    "permissions": [],
+    "limitations": [],
+    "conditions": [],
+    "attributes": []
+  },
+  {
+    "slug": "agpl-3.0",
+    "name": "GNU Affero General Public License v3.0",
+    "description": "Permissions of this strongest copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. When a modified version is used to provide a service over a network, the complete source code of the modified version must be made available.",
+    "read_more_link": "https://www.gnu.org/licenses/agpl-3.0.html",
+    "logo": "agpl-v3-logo.svg",
+    "permissions": [
+      {
+        "name": "Commercial use",
+        "tip": "This software and derivatives may be used for commercial purposes."
+      },
+      {
+        "name": "Modification",
+        "tip": "This software may be modified."
+      },
+      {
+        "name": "Distribution",
+        "tip": "This software may be distributed."
+      },
+      {
+        "name": "Patent use",
+        "tip": "This license provides an express grant of patent rights from contributors."
+      },
+      {
+        "name": "Private use",
+        "tip": "This software may be used and modified in private."
+      }
+    ],
+    "limitations": [
+      {
+        "name": "Liability",
+        "tip": "This license includes a limitation of liability."
+      },
+      {
+        "name": "Warranty",
+        "tip": "The license explicitly states that it does NOT provide any warranty."
+      }
+    ],
+    "conditions": [
+      {
+        "name": "License and copyright notice",
+        "tip": "A copy of the license and copyright notice must be included with the software."
+      },
+      {
+        "name": "State changes",
+        "tip": "Changes made to the code must be documented."
+      },
+      {
+        "name": "Disclose source",
+        "tip": "Source code must be made available when the software is distributed."
+      },
+      {
+        "name": "Network use is distribution",
+        "tip": "Users who interact with the software via network are given the right to receive a copy of the source code."
+      },
+      {
+        "name": "Same license",
+        "tip": "Modifications must be released under the same license when distributing the software. In some cases a similar or related license may be used."
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Copyleft",
+        "_value": true
+      },
+      {
+        "name": "FSF Approved",
+        "_value": true
+      },
+      {
+        "name": "GPL Approved",
+        "_value": true
+      }
+    ]
+  },
+  {
+    "slug": "gpl-3.0",
+    "name": "GNU General Public License v3.0",
+    "description": "Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights.",
+    "read_more_links": "https://www.gnu.org/licenses/gpl-3.0.html",
+    "logo": [
+      "gpl-v3-logo.svg"
+    ],
+    "permissions": [
+      {
+        "name": "Commercial use",
+        "tip": "This software and derivatives may be used for commercial purposes."
+      },
+      {
+        "name": "Modification",
+        "tip": "This software may be modified."
+      },
+      {
+        "name": "Distribution",
+        "tip": "This software may be distributed."
+      },
+      {
+        "name": "Patent use",
+        "tip": "This license provides an express grant of patent rights from contributors."
+      },
+      {
+        "name": "Private use",
+        "tip": "This software may be used and modified in private."
+      }
+    ],
+    "limitations": [
+      {
+        "name": "Liability",
+        "tip": "This license includes a limitation of liability."
+      },
+      {
+        "name": "Warranty",
+        "tip": "The license explicitly states that it does NOT provide any warranty."
+      }
+    ],
+    "conditions": [
+      {
+        "name": "License and copyright notice",
+        "tip": "A copy of the license and copyright notice must be included with the software."
+      },
+      {
+        "name": "State changes",
+        "tip": "Changes made to the code must be documented."
+      },
+      {
+        "name": "Disclose source",
+        "tip": "Source code must be made available when the software is distributed."
+      },
+      {
+        "name": "Same license",
+        "tip": "Modifications must be released under the same license when distributing the software. In some cases a similar or related license may be used."
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Copyleft",
+        "_value": true
+      },
+      {
+        "name": "FSF Approved",
+        "_value": true
+      },
+      {
+        "name": "GPL Approved",
+        "_value": true
+      }
+    ]
+  },
+  {
+    "slug": "lgpl-3.0",
+    "name": "GNU Lesser General Public License",
+    "description": "Permissions of this copyleft license are conditioned on making available complete source code of licensed works and modifications under the same license or the GNU GPLv3. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. However, a larger work using the licensed work through interfaces provided by the licensed work may be distributed under different terms and without source code for the larger work.",
+    "read_more_link": "https://www.gnu.org/licenses/lgpl-3.0.html",
+    "logo": "lgpl-v3-logo.svg",
+    "permissions": [
+      {
+        "name": "Commercial use",
+        "tip": "This software and derivatives may be used for commercial purposes."
+      },
+      {
+        "name": "Modification",
+        "tip": "This software may be modified."
+      },
+      {
+        "name": "Distribution",
+        "tip": "This software may be distributed."
+      },
+      {
+        "name": "Patent use",
+        "tip": "This license provides an express grant of patent rights from contributors."
+      },
+      {
+        "name": "Private use",
+        "tip": "This software may be used and modified in private."
+      }
+    ],
+    "limitations": [
+      {
+        "name": "Liability",
+        "tip": "This license includes a limitation of liability."
+      },
+      {
+        "name": "Warranty",
+        "tip": "The license explicitly states that it does NOT provide any warranty."
+      }
+    ],
+    "conditions": [
+      {
+        "name": "License and copyright notice",
+        "tip": "A copy of the license and copyright notice must be included with the software."
+      },
+      {
+        "name": "State changes",
+        "tip": "Changes made to the code must be documented."
+      },
+      {
+        "name": "Disclose source",
+        "tip": "Source code must be made available when the software is distributed."
+      },
+      {
+        "name": "Same license (library)",
+        "tip": "Modifications must be released under the same license when distributing the software. In some cases a similar or related license may be used."
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Copyleft",
+        "_value": true
+      },
+      {
+        "name": "FSF Approved",
+        "_value": true
+      },
+      {
+        "name": "GPL Approved",
+        "_value": true
+      }
+    ]
+  },
+  {
+    "slug": "apache-2.0",
+    "name": "Apache License 2.0",
+    "description": "A permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code.",
+    "read_more_link": "http://www.apache.org/licenses/LICENSE-2.0",
+    "logo": "apache-logo.svg",
+    "permissions": [
+      {
+        "name": "Commercial use",
+        "tip": "This software and derivatives may be used for commercial purposes."
+      },
+      {
+        "name": "Modification",
+        "tip": "This software may be modified."
+      },
+      {
+        "name": "Distribution",
+        "tip": "This software may be distributed."
+      },
+      {
+        "name": "Patent use",
+        "tip": "This license provides an express grant of patent rights from contributors."
+      },
+      {
+        "name": "Private use",
+        "tip": "This software may be used and modified in private."
+      }
+    ],
+    "limitations": [
+      {
+        "name": "Trademark use",
+        "tip": "This license explicitly states that it does NOT grant trademark rights, even though licenses without such a statement probably do not grant any implicit trademark rights."
+      },
+      {
+        "name": "Liability",
+        "tip": "This license includes a limitation of liability."
+      },
+      {
+        "name": "Warranty",
+        "tip": "The license explicitly states that it does NOT provide any warranty."
+      }
+    ],
+    "conditions": [
+      {
+        "name": "License and copyright notice",
+        "tip": "A copy of the license and copyright notice must be included with the software."
+      },
+      {
+        "name": "State changes",
+        "tip": "Changes made to the code must be documented."
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Copyleft",
+        "_value": false
+      },
+      {
+        "name": "FSF Approved",
+        "_value": true
+      },
+      {
+        "name": "GPL Approved (Only version 2.0 is compatible with only GPLv3)",
+        "_value": true
+      }
+    ]
+  },
+  {
+    "slug": "bsd-3-clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "description": "A permissive license similar to the BSD 2-Clause License, but with a 3rd clause that prohibits others from using the name of the project or its contributors to promote derived products without written consent.",
+    "read_more_link": "https://opensource.org/licenses/BSD-3-Clause",
+    "logo": "",
+    "permissions": [
+      {
+        "name": "Commercial use",
+        "tip": "This software and derivatives may be used for commercial purposes."
+      },
+      {
+        "name": "Modification",
+        "tip": "This software may be modified."
+      },
+      {
+        "name": "Distribution",
+        "tip": "This software may be distributed."
+      },
+      {
+        "name": "Private use",
+        "tip": "This software may be used and modified in private."
+      }
+    ],
+    "limitations": [
+      {
+        "name": "Liability",
+        "tip": "This license includes a limitation of liability."
+      },
+      {
+        "name": "Warranty",
+        "tip": "The license explicitly states that it does NOT provide any warranty."
+      }
+    ],
+    "conditions": [
+      {
+        "name": "License and copyright notice",
+        "tip": "A copy of the license and copyright notice must be included with the software."
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Copyleft",
+        "_value": false
+      },
+      {
+        "name": "FSF Approved",
+        "_value": true
+      },
+      {
+        "name": "GPL Approved",
+        "_value": true
+      }
+    ]
+  },
+  {
+    "slug": "mit",
+    "name": "MIT License",
+    "description": "A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.",
+    "read_more_link": "https://opensource.org/licenses/MIT",
+    "logo": "mit-logo.svg",
+    "permissions": [
+      {
+        "name": "Commercial use",
+        "tip": "This software and derivatives may be used for commercial purposes."
+      },
+      {
+        "name": "Modification",
+        "tip": "This software may be modified."
+      },
+      {
+        "name": "Distribution",
+        "tip": "This software may be distributed."
+      },
+      {
+        "name": "Private use",
+        "tip": "This software may be used and modified in private."
+      }
+    ],
+    "limitations": [
+      {
+        "name": "Liability",
+        "tip": "This license includes a limitation of liability."
+      },
+      {
+        "name": "Warranty",
+        "tip": "The license explicitly states that it does NOT provide any warranty."
+      }
+    ],
+    "conditions": [
+      {
+        "name": "License and copyright notice",
+        "tip": "A copy of the license and copyright notice must be included with the software."
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Copyleft",
+        "_value": false
+      },
+      {
+        "name": "FSF Approved",
+        "_value": true
+      },
+      {
+        "name": "GPL Approved",
+        "_value": true
+      }
+    ]
+  }
+]
