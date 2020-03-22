@@ -13,14 +13,18 @@ jobs:
       matrix:
         node-version: [10.x, 12.x]
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - name: Install Packages
-      run: npm ci
-    - name: Deploy to Github Pages
-      run: npm run deploy
-    - name: Updating Domain
-      run: echo "Update domain"
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install Packages
+        run: npm ci
+      - name: Deploy to Github Pages
+        run: |
+          git config user.email "${{ secrets.GITHUB_EMAIL }}"
+          git config user.name "${{ secrets.GITHUB_USERNAME }}"
+          git remote set-url origin https://${{ secrets.ACCESS_TOKEN }}@github.com/${{ secrets.GITHUB_USERNAME }}/flyyoufools.git
+          npm run deploy
+      - name: Updating Domain
+        run: echo "Update domain"
