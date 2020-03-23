@@ -33,7 +33,7 @@ export const DonatePopover = () => (
                     src={process.env.PUBLIC_URL + `/static/media/eth-qr.svg`}
                     width='90'
                     height='90'
-                    title='Ethereum Wallet' alt="Ethereum Wallet"/>
+                    title='Ethereum Wallet' alt='Ethereum Wallet'/>
                 <Typography.Text
                     copyable={{text: ETH_WALLET_ADDRESS}}
                     className='donate-address'

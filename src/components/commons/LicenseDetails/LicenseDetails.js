@@ -4,7 +4,7 @@ import {
     ExclamationOutlined,
     InfoCircleOutlined
 } from '@ant-design/icons'
-import { Button, Col, Result, Row, Typography } from 'antd'
+import { Button, Col, Result, Row, Spin, Typography } from 'antd'
 import Animate from 'rc-animate'
 import React from 'react'
 import { AttributesList, PropertiesList } from '..'
@@ -37,34 +37,36 @@ export const LicenseDetails = () => {
                 </Animate>
             }
             subTitle={
-                <Animate transitionName='fade' transitionAppear>
-                    <Row key='3'>
-                        <Col xs={{span: 24}}
-                             md={{span: 16, offset: 4}}
-                             lg={{span: 18, offset: 3}}
-                             xl={{span: 18, offset: 3}}
-                        >
-                            <Typography.Text>{licenseInfo.description}
-                                {
-                                    licenseInfo.read_more_link ? <Button
-                                        type='link'
-                                        size='small'
-                                        href={licenseInfo.read_more_link}
-                                        target='_blank'>
-                                        Read more...
-                                    </Button> : null
-                                }
-                            </Typography.Text>
-                        </Col>
-                    </Row>
-                </Animate>
+                <Spin spinning={steps.isLoading}>
+                    <Animate transitionName='fade' transitionAppear>
+                        <Row key='3'>
+                            <Col xs={{span: 24}}
+                                 md={{span: 16, offset: 4}}
+                                 lg={{span: 18, offset: 3}}
+                                 xl={{span: 18, offset: 3}}
+                            >
+                                <Typography.Text>{licenseInfo.description}
+                                    {
+                                        licenseInfo.read_more_link ? <Button
+                                            type='link'
+                                            size='small'
+                                            href={licenseInfo.read_more_link}
+                                            target='_blank'>
+                                            Read more...
+                                        </Button> : null
+                                    }
+                                </Typography.Text>
+                            </Col>
+                        </Row>
+                    </Animate>
+                </Spin>
             }
             extra={[
-                <Button key='4' onClick={() => backToLastStep()}
+                <Button key='4' onClick={backToLastStep}
                         type='primary'>
                     Go Back
                 </Button>,
-                <Button key='5' onClick={() => resetState()}>
+                <Button key='5' onClick={resetState}>
                     Reset
                 </Button>
             ]}
