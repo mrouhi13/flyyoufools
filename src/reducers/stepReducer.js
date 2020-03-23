@@ -16,7 +16,7 @@ export const stepReducer = (state, action) => {
         case stepActions.SET_APPROPRIATE_LICENSE:
             return {...state, appropriateLicense: action.payload}
         case stepActions.RESET_STATE:
-            return {currentStep: action.payload, appropriateLicense: null}
+            return {...state, currentStep: action.payload, appropriateLicense: null}
         case stepActions.IS_LOADING:
             return {...state, isLoading: action.payload}
         default:
