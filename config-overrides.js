@@ -10,12 +10,8 @@ module.exports = override(
     addLessLoader({
         javascriptEnabled: true,
         modifyVars: {
-            '@primary-color': '#15395b',
-            '@link-color': '#8c8c8c',
-            '@text-color-secondary': '#8c8c8c',
-            '@disabled-color': 'rgba(0, 0, 0, 0.2)',
-            '@text-color': 'rgba(0, 0, 0, 0.65)',
-            '@font-family': '"Baloo 2", cursive, serif',
+            '@primary-color': '#0074B7',
+            '@font-family': '"Baloo 2", cursive;',
             '@border-radius-base': '6px',
             // ...darkThemeVars,
         }

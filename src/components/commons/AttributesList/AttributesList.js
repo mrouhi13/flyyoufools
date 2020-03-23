@@ -10,7 +10,7 @@ export const AttributesList = ({header, items, animationType}) => (
               itemLayout='horizontal'
               split={false}
               key='a'
-              locale={{emptyText: ' '}}
+              locale={{emptyText: 'No item!'}}
               dataSource={items}
               renderItem={item => (
                   <List.Item>

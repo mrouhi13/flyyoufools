@@ -8,7 +8,7 @@ export const PropertiesList = ({header, items, icon, animationType}) => (
         <List
             header={<Typography.Title level={4}>{header}</Typography.Title>}
             itemLayout='horizontal'
-            locale={{emptyText: ' '}}
+            locale={{emptyText: 'No item!'}}
             split={false}
             key='a'
             dataSource={items}
