@@ -15,14 +15,14 @@ export const Steps = () => {
     return (
         <Fragment>
             <Row key='1' justify='center'>
-                <Col span={20}>
+                <Col xs={{span:18}} sm={{span:18}} md={{span:14}} lg={{span:12}} xl={{span:12}}>
                     <div ref={stepsProgressRef}>
                         <StepsProgress/>
                     </div>
                 </Col>
             </Row>
-            <Row key='2'>
-                <Col span={24}>
+            <Row key='2' justify='center'>
+                <Col xs={{span:24}} sm={{span:20}} md={{span:14}} lg={{span:12}} xl={{span:10}}>
                     <QueueAnim type={['left']}>
                         {!steps.isLoading ?
                             <div key='a'
@@ -40,6 +40,7 @@ export const Steps = () => {
                         {!steps.isLoading ?
                             <div key='a' className='align-center'>
                                 <Button type='primary'
+                                        size='large'
                                         className='answer-button'
                                         onClick={() => {
                                             changeStep(true, stepsProgressRef)
@@ -47,7 +48,8 @@ export const Steps = () => {
                                 >
                                     Yes
                                 </Button>
-                                <Button className='answer-button'
+                                <Button size='large'
+                                        className='answer-button'
                                         onClick={() => {
                                             changeStep(false, stepsProgressRef)
                                         }}
