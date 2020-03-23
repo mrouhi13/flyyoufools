@@ -1,6 +1,6 @@
 import React, { createContext, useReducer } from 'react'
+import { STEPS } from '../constants'
 import { stepReducer } from '../reducers'
-import {STEPS} from '../constants'
 
 export const StepContext = createContext(null)
 export const StepContextProvider = ({children}) => {
@@ -10,6 +10,7 @@ export const StepContextProvider = ({children}) => {
         appropriateLicense: null
     }
     const [steps, dispatch] = useReducer(stepReducer, initialState)
+
     return (
         <StepContext.Provider value={{steps, dispatch}}>
             {children}

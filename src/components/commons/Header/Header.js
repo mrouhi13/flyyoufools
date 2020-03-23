@@ -9,10 +9,11 @@ export const Header = () => (
             <img src={process.env.PUBLIC_URL + `/static/media/${APP_LOGO}`}
                  width='36'
                  height='36'
-                 title='Fly You Fools'
-                 alt='Fly You Fools'
+                 title='FlyYouFools'
+                 alt='FlyYouFools'
             />
-            <Typography.Title level={1} style={{fontSize:18, display:'inline-flex'}}>
+            <Typography.Title level={1}
+                              style={{fontSize: 18, display: 'inline-flex'}}>
                 FlyYouFools
             </Typography.Title>
         </div>

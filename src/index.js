@@ -3,8 +3,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { App } from './components/views'
 import { StepContextProvider } from './contexts'
-import * as serviceWorker from './serviceWorker'
 import './index.scss'
+import * as serviceWorker from './serviceWorker'
 
 ReactDOM.render(
     <StepContextProvider>

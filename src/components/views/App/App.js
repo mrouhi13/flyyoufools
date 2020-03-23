@@ -6,6 +6,7 @@ import './App.scss'
 
 export const App = () => {
     const {steps} = useStep()
+
     return (
         <Layout className='layout'>
             <Header/>

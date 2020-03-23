@@ -14,15 +14,17 @@ export const Steps = () => {
 
     return (
         <Fragment>
-            <Row key='1' justify='center'>
-                <Col xs={{span:18}} sm={{span:18}} md={{span:14}} lg={{span:12}} xl={{span:12}}>
+            <Row justify='center'>
+                <Col xs={{span: 18}} sm={{span: 18}} md={{span: 14}}
+                     lg={{span: 12}} xl={{span: 12}}>
                     <div ref={stepsProgressRef}>
                         <StepsProgress/>
                     </div>
                 </Col>
             </Row>
-            <Row key='2' justify='center'>
-                <Col xs={{span:24}} sm={{span:20}} md={{span:14}} lg={{span:12}} xl={{span:10}}>
+            <Row justify='center'>
+                <Col xs={{span: 24}} sm={{span: 20}} md={{span: 14}}
+                     lg={{span: 12}} xl={{span: 10}}>
                     <QueueAnim type={['left']}>
                         {!steps.isLoading ?
                             <div key='a'
@@ -34,7 +36,7 @@ export const Steps = () => {
                     </QueueAnim>
                 </Col>
             </Row>
-            <Row key='3'>
+            <Row>
                 <Col span={24}>
                     <QueueAnim type={['right']}>
                         {!steps.isLoading ?

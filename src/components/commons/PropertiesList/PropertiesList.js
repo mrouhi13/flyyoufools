@@ -1,6 +1,5 @@
 import { List, Tooltip, Typography } from 'antd'
 import QueueAnim from 'rc-queue-anim'
-
 import React from 'react'
 
 export const PropertiesList = ({header, items, icon, animationType}) => (

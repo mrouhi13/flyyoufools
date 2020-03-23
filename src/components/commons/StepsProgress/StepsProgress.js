@@ -12,6 +12,7 @@ export const StepsProgress = () => {
             current={steps.currentStep.number - 1}
             labelPlacement='vertical'
             size='small'
+            key='1'
             progressDot={true}
             className='steps-progress'
         >
