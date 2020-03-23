@@ -50,10 +50,13 @@ export const useStep = () => {
 
     const resetState = () => {
         dispatch({
+            type: stepActions.IS_LOADING,
+            payload: true
+        })
+        dispatch({
             type: stepActions.RESET_STATE,
             payload: STEPS[0]
         })
-
         setTimeout(() => dispatch({
                 type: stepActions.IS_LOADING,
                 payload: false
@@ -63,10 +66,13 @@ export const useStep = () => {
 
     const backToLastStep = () => {
         dispatch({
+            type: stepActions.IS_LOADING,
+            payload: true
+        })
+        dispatch({
             type: stepActions.UPDATE_CURRENT_STEP,
             payload: steps.currentStep
         })
-
         setTimeout(() => dispatch({
                 type: stepActions.IS_LOADING,
                 payload: false
