@@ -1,4 +1,4 @@
-import { Button, Col, Row, Typography } from 'antd'
+import { Button, Col, Row, Spin, Typography } from 'antd'
 import QueueAnim from 'rc-queue-anim'
 import React, { Fragment, useEffect, useRef } from 'react'
 import { StepsProgress } from '..'
@@ -8,9 +8,9 @@ import './Steps.scss'
 export const Steps = () => {
     const stepsProgressRef = useRef(null)
     const {steps, changeStep, scrollToRef} = useStep()
-    const useMountEffect = fun => useEffect(fun, [])
 
-    useMountEffect(() => scrollToRef(stepsProgressRef, steps.currentStep))
+    useEffect(() => scrollToRef(stepsProgressRef, steps.currentStep),
+        [steps])
 
     return (
         <Fragment>
@@ -25,15 +25,17 @@ export const Steps = () => {
             <Row justify='center'>
                 <Col xs={{span: 24}} sm={{span: 20}} md={{span: 14}}
                      lg={{span: 12}} xl={{span: 10}}>
-                    <QueueAnim type={['left']}>
-                        {!steps.isLoading ?
-                            <div key='a'
-                                 className='align-center question-body'>
-                                <Typography.Text>
-                                    {steps.currentStep.questionBody}
-                                </Typography.Text>
-                            </div> : null}
-                    </QueueAnim>
+                    <Spin spinning={steps.isLoading}>
+                        <QueueAnim type={['left']}>
+                            {!steps.isLoading ?
+                                <div key='a'
+                                     className='align-center question-body'>
+                                    <Typography.Text>
+                                        {steps.currentStep.questionBody}
+                                    </Typography.Text>
+                                </div> : null}
+                        </QueueAnim>
+                    </Spin>
                 </Col>
             </Row>
             <Row>
