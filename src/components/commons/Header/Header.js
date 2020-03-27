@@ -16,7 +16,7 @@ export const Header = () => {
                      lg={{span: 8}}
                      xl={{span: 16}}
                 >
-                    <div className='app-logo'>
+                    <Button type='link' href='/' className='app-logo'>
                         <img
                             src={process.env.PUBLIC_URL + `/static/media/${APP_LOGO}`}
                             width='36'
@@ -31,7 +31,7 @@ export const Header = () => {
                                           }}>
                             FlyYouFools
                         </Typography.Title>
-                    </div>
+                    </Button>
                 </Col>
                 <Col xs={{span: 9}}
                      md={{span: 12}}
