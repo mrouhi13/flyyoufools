@@ -9,7 +9,7 @@
     "customize-cra": "^0.9.1",
     "less": "^3.11.1",
     "less-loader": "^5.0.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "rc-animate": "^2.10.3",
     "rc-queue-anim": "^1.8.4",
     "react": "^16.13.1",
